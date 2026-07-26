@@ -1,0 +1,10 @@
+// Inline SVG icons used across the customer flow.
+export const ChevronLeft = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M15 6l-6 6 6 6" /></svg>);
+export const ArrowRight = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M5 12h14M13 6l6 6-6 6" /></svg>);
+export const CameraIcon = (p) => (<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" {...p}><rect x="4" y="13" width="40" height="28" rx="6" /><path d="M16 13l3-5h10l3 5" /><circle cx="24" cy="27" r="8" /></svg>);
+export const PrinterIcon = (p) => (<svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M7 3h10v5H7z" /><path d="M5 9h14a2 2 0 0 1 2 2v6h-4v3H7v-3H3v-6a2 2 0 0 1 2-2zm4 7v4h6v-4z" /></svg>);
+export const GarmentIcon = (p) => (<svg viewBox="0 0 64 64" fill="none" stroke="#9a9a9a" strokeWidth="2.5" strokeLinejoin="round" {...p}><path d="M23 10l-13 8 5 9 6-3v23h26V24l6 3 5-9-13-8-6 5h-7z" /></svg>);
+export const TimerIcon = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2M9 2h6" /></svg>);
+export const TruckIcon = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M3 6h11v9H3zM14 9h4l3 3v3h-7z" /><circle cx="7" cy="18" r="1.6" /><circle cx="17" cy="18" r="1.6" /></svg>);
+export const CheckIcon = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M20 6L9 17l-5-5" /></svg>);
+export const WarehouseIcon = (p) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" {...p}><path d="M3 21V9l9-5 9 5v12M7 21v-6h10v6" /></svg>);

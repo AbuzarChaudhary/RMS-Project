@@ -1,0 +1,48 @@
+.login {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px;
+}
+.login-card { width: 461px; max-width: 100%; }
+.login-form { display: flex; flex-direction: column; gap: 24px; }
+.login-form__link {
+  width: fit-content;
+  padding: 0;
+  font-family: var(--rms-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--rms-text-dark);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- Role selection (Admin / Staff) --- */
+.login-roles { display: flex; gap: 12px; }
+.login-role {
+  flex: 1; padding: 12px 16px;
+  font-family: var(--rms-font); font-weight: 600; font-size: 16px;
+  color: var(--rms-text-dark); background: #f2f2f2;
+  border: 1.5px solid var(--rms-border); border-radius: 10px;
+  cursor: pointer; transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.login-role:hover { border-color: #bdbdbd; }
+.login-role.is-active {
+  background: var(--rms-green); border-color: var(--rms-green); color: var(--rms-on-green);
+}
+.login-roles + .login-form { margin-top: 24px; }
+.login-error { margin: -8px 0 0; font-family: var(--rms-font); font-size: 14px; color: #c0392b; }
+.login-hint { margin: 4px 0 0; font-family: var(--rms-font); font-size: 13px; color: #8a8a8a; }
+
+/* --- Back arrow: return to the Main Screen (matches .stage__back / .staff__back) --- */
+.login { position: relative; }
+.login__back {
+  position: absolute; top: 22px; left: 26px;
+  width: 42px; height: 42px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; background: none; border: none; cursor: pointer;
+}
+.login__back svg { width: 30px; height: 30px; }

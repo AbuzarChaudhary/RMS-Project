@@ -1,0 +1,2 @@
+.bg-decor { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.bg-decor__img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 1; }

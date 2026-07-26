@@ -1,0 +1,38 @@
+@import './variables.css';
+@import './flow.css';
+@import './backoffice.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--rms-page);
+  font-family: var(--rms-font);
+  color: var(--rms-text-dark);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+:focus-visible { outline: 2px solid var(--rms-green); outline-offset: 2px; }
+
+/* ---- App shell (real image lives in the body via BackgroundDecor) ---- */
+.app-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--rms-overlay);
+  overflow: hidden;
+}
+.app-main { position: relative; flex: 1; display: flex; }
+.app-content { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; }
+
+/* Placeholder still used by not-yet-built routes */
+.page-placeholder { position: relative; z-index: 1; padding: 48px; color: var(--rms-text-light); }
+.page-placeholder__note { opacity: 0.6; font-style: italic; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

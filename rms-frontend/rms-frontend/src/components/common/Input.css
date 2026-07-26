@@ -1,0 +1,22 @@
+.field { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.field__label { font-weight: 700; font-size: 16px; line-height: 1.4; color: var(--rms-text-dark); }
+.field__control {
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  font-family: var(--rms-font);
+  font-size: 16px;
+  color: var(--rms-text-dark);
+  background: var(--rms-card-bg);
+  border: 1px solid var(--rms-border);
+  border-radius: var(--rms-radius-sm);
+  outline: none;
+  transition: border-color .15s ease;
+}
+.field__control::placeholder { color: var(--rms-placeholder); }
+.field__control:hover { border-color: #c4c4c4; }
+.field__control:focus { border-color: #8f8f8f; }
+
+/* large pill variant = the Order ID search box */
+.field__control--lg { height: 71px; padding: 0 28px; }
+.field__control--pill { border-radius: var(--rms-radius-pill); }

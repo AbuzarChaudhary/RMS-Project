@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--rms-font);
+  font-weight: 800;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .04s ease;
+}
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  background: var(--rms-green);
+  color: var(--rms-on-green);
+}
+.btn--primary:hover { background: var(--rms-green-hover); }
+.btn--primary:active { background: var(--rms-green-active); }
+
+/* sizes mirror the three Figma button instances */
+.btn--md { font-size: 16px; letter-spacing: -0.5px; padding: 12px 16px; border-radius: var(--rms-radius-md); }
+.btn--lg { font-size: 20px; font-weight: 700; padding: 12px 16px; border-radius: var(--rms-radius-sm); }
+.btn--xl { font-size: 24px; padding: 14px 28px; border-radius: var(--rms-radius-md); }
+
+.btn--pill { border-radius: var(--rms-radius-pill); }
+.btn--block { width: 100%; }

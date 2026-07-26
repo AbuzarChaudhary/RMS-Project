@@ -1,0 +1,6 @@
+.card {
+  background: var(--rms-card-bg);
+  border: 1px solid var(--rms-border);
+  border-radius: var(--rms-radius-sm);
+  padding: 24px;
+}
